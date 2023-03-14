@@ -1,24 +1,24 @@
 # Convertme
 
-TODO: Delete this and the text below, and describe your gem
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/convertme`. To experiment with that code, run `bin/console` for an interactive prompt.
-
+This is a Ruby gem that can convert between different currencies using real-time exchange rates from the Open Exchange Rates API. The gem provides a simple interface for converting between currencies and supports over 170 different currencies.
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+You can install the Currency Converter gem using RubyGems:
 
 Install the gem and add to the application's Gemfile by executing:
 
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+    $ bundle add convertme-0.1.0.gem
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+    $ gem install convertme-0.1.0.gem
 
 ## Usage
 
-TODO: Write usage instructions here
+To use the gem, you'll need to sign up for a free API key from Open Exchange Rates. Once you have your API key, you can set it in your application like this:
+To convert between currencies, you can use the convert method:
+
+    Convertme::CurrencyConverter.new("EUR", "CHF").run(100) 
 
 ## Development
 
